@@ -29,4 +29,4 @@
 
 ## 🔑 기술 스택
 
-`Spring Boot 4` `Java 21` `React 18` `Flutter 3` `Claude API` `pgvector` `Docker + gVisor` `Kafka` `MySQL` `Redis`
+`Spring Boot 4` `Java 21` `React 18` `Flutter 3` `Claude API` `pgvector` `Docker + gVisor` `Kafka` `PostgreSQL` `Redis`
