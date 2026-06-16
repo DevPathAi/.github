@@ -22,7 +22,7 @@
 | [devpath-community-svc](https://github.com/DevPathAi/devpath-community-svc) | 게시판 · 평판 · 배지 · 모더레이션 · 학습 맥락 |
 | [devpath-ai-svc](https://github.com/DevPathAi/devpath-ai-svc) | AI Gateway(Claude 오케스트레이터) · review worker · FinOps |
 | [devpath-sandbox-svc](https://github.com/DevPathAi/devpath-sandbox-svc) | Docker + gVisor 격리 실행 |
-| [devpath-frontend](https://github.com/DevPathAi/devpath-frontend) | web/admin(React) + mobile(Flutter) |
+| [devpath-frontend](https://github.com/DevPathAi/devpath-frontend) | web·admin·mobile 모두 Flutter (Dart, melos 모노레포) |
 | [devpath-gitops](https://github.com/DevPathAi/devpath-gitops) | Kubernetes 매니페스트 + ArgoCD + 마이그레이션 Job |
 | [devpath-svc-template](https://github.com/DevPathAi/devpath-svc-template) | 백엔드 서비스 스켈레톤 템플릿 |
 
@@ -38,4 +38,4 @@
 
 ## 🔑 기술 스택
 
-`Spring Boot 4` `Java 21` `React 18` `Flutter 3` `Claude API` `pgvector` `Docker + gVisor` `Kafka` `PostgreSQL` `Redis`
+`Spring Boot 4` `Java 21` `Flutter 3` `Dart` `Claude API` `pgvector` `Docker + gVisor` `Kafka` `PostgreSQL` `Redis`
