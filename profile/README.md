@@ -4,9 +4,11 @@
 
 한국 백엔드 개발자 커리어를 타겟으로, **AI 개인화 학습 경로** · **실습 기반 AI 코드 리뷰** · **학습 맥락 연결 커뮤니티**를 결합한 학습 플랫폼입니다.
 
-가입 후 1시간 안에 두 번의 Aha Moment를 제공합니다:
+가입 후 두 번의 Aha Moment를 목표로 합니다:
 1. 🎉 **1st Aha** — GitHub 활동 + 진단 결과 기반 3개월 개인화 로드맵
 2. 🎉 **2nd Aha** — Sandbox 실습 후 실무급 AI 코드 리뷰
+
+> **현재 구현 상태(2026-06-19)**: web/admin Flutter 목 API 프로토타입과 MD1 일부 백엔드(auth/users, onboarding assessment, Ollama AI gateway)가 구현되어 있습니다. 학습경로 영속화, Sandbox runner, community API, 운영 Claude/FinOps는 목표 상태입니다.
 
 ## 📦 레포지토리
 
@@ -19,10 +21,10 @@
 | [devpath-gateway](https://github.com/DevPathAi/devpath-gateway) | API Gateway (Spring Cloud Gateway, OAuth2 + JWT) |
 | [devpath-platform-svc](https://github.com/DevPathAi/devpath-platform-svc) | user/auth · github 수집 · notification |
 | [devpath-learning-svc](https://github.com/DevPathAi/devpath-learning-svc) | onboarding · 학습 경로 엔진 · content · mentor |
-| [devpath-community-svc](https://github.com/DevPathAi/devpath-community-svc) | 게시판 · 평판 · 배지 · 모더레이션 · 학습 맥락 |
-| [devpath-ai-svc](https://github.com/DevPathAi/devpath-ai-svc) | AI Gateway(Claude 오케스트레이터) · review worker · FinOps |
-| [devpath-sandbox-svc](https://github.com/DevPathAi/devpath-sandbox-svc) | Docker + gVisor 격리 실행 |
-| [devpath-frontend](https://github.com/DevPathAi/devpath-frontend) | web·admin·mobile 모두 Flutter (Dart, melos 모노레포) |
+| [devpath-community-svc](https://github.com/DevPathAi/devpath-community-svc) | 목표: 게시판 · 평판 · 배지 · 모더레이션 · 학습 맥락 / 현재: 스켈레톤 |
+| [devpath-ai-svc](https://github.com/DevPathAi/devpath-ai-svc) | 현재 dev: Ollama AI Gateway(`/ai/embed`, `/ai/path/generate`) / 운영 목표: Claude 등 provider · review worker · FinOps |
+| [devpath-sandbox-svc](https://github.com/DevPathAi/devpath-sandbox-svc) | 목표: Docker + gVisor 격리 실행 / 현재: 스켈레톤 |
+| [devpath-frontend](https://github.com/DevPathAi/devpath-frontend) | web·admin Flutter 목 API 골든패스, mobile 초기 앱 (Dart, melos 모노레포) |
 | [devpath-gitops](https://github.com/DevPathAi/devpath-gitops) | Kubernetes 매니페스트 + ArgoCD + 마이그레이션 Job |
 | [devpath-svc-template](https://github.com/DevPathAi/devpath-svc-template) | 백엔드 서비스 스켈레톤 템플릿 |
 
@@ -38,4 +40,4 @@
 
 ## 🔑 기술 스택
 
-`Spring Boot 4` `Java 21` `Flutter 3` `Dart` `Claude API` `pgvector` `Docker + gVisor` `Kafka` `PostgreSQL` `Redis`
+`Spring Boot 4` `Java 21` `Flutter 3` `Dart` `Ollama(dev)` `Claude API(target)` `pgvector` `Docker + gVisor` `Kafka` `PostgreSQL` `Redis`
