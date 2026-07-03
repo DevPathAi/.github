@@ -20,11 +20,14 @@
 | [devpath-shared](https://github.com/DevPathAi/devpath-shared) | 공유 이벤트 스키마, 공통 라이브러리, 중앙 Flyway 스키마(SSOT), 로컬 compose(PostgreSQL/pgvector/Redis/Kafka/Elasticsearch) |
 | [devpath-gateway](https://github.com/DevPathAi/devpath-gateway) | Spring Cloud Gateway 엣지 라우팅, OAuth2/JWT 검증, learning/platform/content API 프록시 |
 | [devpath-platform-svc](https://github.com/DevPathAi/devpath-platform-svc) | user/auth, OAuth2 연동, refresh/logout, notification, onboarding 상태 전이 |
-| [devpath-learning-svc](https://github.com/DevPathAi/devpath-learning-svc) | onboarding 진단, 학습경로 엔진, 콘텐츠 seed·viewer API, 콘텐츠 진척, mentor 목표 도메인 |
-| [devpath-ai-svc](https://github.com/DevPathAi/devpath-ai-svc) | dev Ollama AI Gateway(`/ai/embed`, `/ai/path/generate`)와 운영 provider 교체 지점 |
-| [devpath-community-svc](https://github.com/DevPathAi/devpath-community-svc) | 게시판, 평판, 배지, 모더레이션, 학습 맥락 연결 목표 도메인(현재 스켈레톤) |
-| [devpath-sandbox-svc](https://github.com/DevPathAi/devpath-sandbox-svc) | Docker + gVisor 격리 실행, 제출 실행 로그, Sandbox runner 목표 도메인(현재 스켈레톤) |
-| [devpath-frontend](https://github.com/DevPathAi/devpath-frontend) | Flutter/Dart melos 모노레포: web 실API 흐름, admin 목 화면, mobile 초기 앱, dp_core/dp_design |
+| [devpath-learning-svc](https://github.com/DevPathAi/devpath-learning-svc) | onboarding 진단, 학습경로 엔진, 콘텐츠 seed·viewer API, 콘텐츠 진척 |
+| [devpath-notification-svc](https://github.com/DevPathAi/devpath-notification-svc) | FCM 디바이스 토큰, 인앱 알림 인박스 (2026-07-01 platform-svc에서 이관) |
+| [devpath-ai-svc](https://github.com/DevPathAi/devpath-ai-svc) | dev Ollama AI Gateway(`/ai/embed`, `/ai/path/generate`)와 운영 provider 교체 지점, AI 멘토·AI 리뷰 |
+| [devpath-community-svc](https://github.com/DevPathAi/devpath-community-svc) | Q&A 게시판, 평판, 배지, 남용방지 구현 · 모더레이션은 목표 도메인 |
+| [devpath-lcs-svc](https://github.com/DevPathAi/devpath-lcs-svc) | LCS(학습 맥락 자동 첨부) — 스냅샷 조립·불변 첨부 |
+| [devpath-sandbox-svc](https://github.com/DevPathAi/devpath-sandbox-svc) | Docker + gVisor 격리 실행, 제출 실행 로그 |
+| [devpath-frontend](https://github.com/DevPathAi/devpath-frontend) | Flutter/Dart melos 모노레포: web·admin·mobile, dp_core/dp_design |
+| [devpath-landing-page](https://github.com/DevPathAi/devpath-landing-page) | 검증용 정적 랜딩(Cloudflare Pages Functions), 장기 Jaspr 랜딩과 별개 |
 | [devpath-gitops](https://github.com/DevPathAi/devpath-gitops) | Kubernetes 매니페스트, ArgoCD ApplicationSet, 서비스별 Kustomize base |
 | [devpath-svc-template](https://github.com/DevPathAi/devpath-svc-template) | 백엔드 서비스 스켈레톤 템플릿 |
 
